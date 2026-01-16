@@ -1,88 +1,98 @@
-/* style.css */
-
-/* 1. Global Styles */
-body {
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.7;
-    color: #2d3436;
-    background-color: #ffffff;
-    max-width: 750px;
-    margin: 0 auto;
-    padding: 2rem 1.5rem;
-}
-
-/* 2. Header & Branding */
-header {
-    text-align: left;
-    margin-bottom: 4rem;
-    border-bottom: 1px solid #edf2f7;
-    padding-bottom: 2rem;
-}
-
-h1 {
-    font-size: 2.2rem;
-    color: #1a202c;
-    margin-bottom: 0.5rem;
-    letter-spacing: -0.5px;
-}
-
-.author-name {
-    font-size: 1.1rem;
-    color: #718096;
+/* Basic Reset */
+* {
     margin: 0;
-}
-
-/* 3. Post List Container (Requested Class) */
-.post-list {
-    list-style: none;
     padding: 0;
-    margin: 0;
+    box-sizing: border-box;
 }
 
-/* 4. Individual Post Items */
-.post-item {
-    margin-bottom: 3rem;
-    transition: transform 0.2s ease;
+/* Body Styling - Centers your blog and sets the font */
+body {
+    font-family: Georgia, serif;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fafafa;
+    color: #333;
 }
 
-.post-item:hover {
-    transform: translateX(5px);
+/* Header & Navigation */
+header {
+    border-bottom: 2px solid #333;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-.post-date {
-    display: block;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #a0aec0;
-    margin-bottom: 0.5rem;
+header h1 {
+    margin-bottom: 10px;
 }
 
-.post-link {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #2b6cb0;
+nav a {
+    color: #0066cc;
     text-decoration: none;
-    line-height: 1.2;
 }
 
-.post-link:hover {
-    color: #2c5282;
+nav a:hover {
     text-decoration: underline;
 }
 
-.post-excerpt {
-    margin-top: 0.75rem;
-    color: #4a5568;
-    font-size: 1.05rem;
+/* Homepage Post List (Critical for the Dashboard) */
+.post-list {
+    list-style: none;
 }
 
-/* 5. Footer */
+.post-list li {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.post-list a {
+    font-size: 1.3em;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.post-list a:hover {
+    color: #0066cc;
+}
+
+.post-list .date {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+    font-style: italic;
+}
+
+/* Individual Post Content Styling */
+article h2 {
+    margin-bottom: 5px;
+}
+
+article .date {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+article p {
+    margin-bottom: 1em;
+}
+
+blockquote {
+    border-left: 3px solid #ccc;
+    margin: 1.5em 0;
+    padding-left: 1em;
+    font-style: italic;
+    color: #555;
+}
+
+/* Footer Styling */
 footer {
-    margin-top: 5rem;
-    padding-top: 2rem;
-    border-top: 1px solid #edf2f7;
-    font-size: 0.9rem;
-    color: #a0aec0;
-    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    color: #666;
+    font-size: 0.9em;
 }
